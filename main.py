@@ -14,3 +14,5 @@ with mss() as sct:
         timberman.chop_tree(tree)
         time.sleep(0.06)
         tree.update()
+        if keyboard.is_pressed('q'):
+            exit(0)

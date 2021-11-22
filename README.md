@@ -18,9 +18,8 @@ When running for the first time:
 3. Source environment `source env/bin/activate`,
 4. Install required libraries,
     * `pip install mss`,
-    * `pip install time`,
     * `pip install keyboard`,
-    * `pip install PIL`.
+    * `pip install pillow`.
     
 If virtual environment exists just call `source env/bin/activate`
 
@@ -28,7 +27,8 @@ To start the script run `python3 main.py`
 
 At this point script should wait for the input from the user.
 To start first maximize Timberman VS and start the game. After starting the game wait until 
-a countdown disappears, then press _S_ key, script should start chopping the tree. 
+a countdown disappears, then press _S_ key, script should start chopping the tree.  
+To stop press _q_ key.
 
 ### How it works
 Script starts by taking a screenshot of the entire tree and build virtual representation of the tree by looking at the branches.

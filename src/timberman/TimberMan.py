@@ -15,5 +15,5 @@ class TimberMan:
     def chop_tree(self, tree: Tree):
         self.__side = self.__side.next_move(tree)
         TimberMan.LOGGER.print(f"My next move is {str(self.__side)}")
-        keyboard.write(self.__side.get_button())
+        keyboard.send(self.__side.get_button(), do_press=True, do_release=True)
         tree.chop()

@@ -12,7 +12,7 @@ with mss() as sct:
     tree = Tree(sct)
     while True:
         timberman.chop_tree(tree)
-        time.sleep(0.06)
+        time.sleep(0.07)
         tree.update()
         if keyboard.is_pressed('q'):
             exit(0)
